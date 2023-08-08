@@ -1,0 +1,439 @@
+@import url(' https://fonts.cdnfonts.com/css/star-wars ');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: #f2ececf6;
+    font-size: none;
+}
+
+body {
+    background-image: url('./assets/universo-bg.jpg');   
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-img {
+    width: 150px;
+    height: 70px;
+}
+
+.saga {
+    font-family: 'Star Wars', sans-serif;
+    color: rgba(255, 200, 0, 0.839);
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+#card-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-name {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-family: 'Star Wars', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.span-planets {
+    padding-right: 40px;
+}
+
+#card {
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.person {
+    width: 200px;
+    height: 300px;
+    background-image: url('./imagens-home/personagens.jpeg');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+
+.person:hover {
+    transform: scale(1.05);
+}
+
+.planets {
+    width: 200px;
+    height: 300px;
+    background-image: url('./imagens-home/planetas.jpg');
+    background-position: 30% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+
+.planets:hover {
+    transform: scale(1.05);
+}
+
+.ships {
+    width: 200px;
+    height: 300px;
+    background-image: url('./imagens-home/starships.webp');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+
+.ships:hover {
+    transform: scale(1.05);
+}
+
+.logo-img {
+    width: 150px;
+    height: 70px;
+}
+
+.social-media {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+i {
+    font-size: 1.2rem;
+}
+
+i:hover {
+    color: gold;
+}
+footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    row-gap: 10px;
+    margin: 60px 0 20px 0;
+}
+
+.footer-logo {
+    font-family: 'Star Wars', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.copyrigth {
+    font-weight: 500;
+}
+
+.character-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-position: 50% 10%;
+    background-size: cover;
+}
+
+.character-details {
+    font-family: 'Star Wars', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    color: rgba(255, 217, 0, 0.874);
+}
+
+.card-setas {
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.arrows {
+    width: 60px;
+    height: 172px;
+    bottom: 20px;
+}
+
+.arrows path {
+    stroke: #fff;
+    fill: transparent;
+    stroke-width: 1px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+    animation-delay:  -1s;
+    -webkit-animation-delay:  -1s;
+}
+
+.arrows path.a2 {
+    animation-delay:  -0.5s;
+    -webkit-animation-delay:  -0.5s;
+}
+
+.arrows path.a3 {
+    animation-delay:  0s;
+    -webkit-animation-delay:  0s;
+}
+
+@media(max-width: 660px){
+    .person {
+        width: 150px;
+        height: 300px;
+        background-image: url('./imagens-home/personagens.jpeg');
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 0.5s;
+    }
+    
+    .person:hover {
+        transform: scale(1.05);
+    }
+    
+    .planets {
+        width: 150px;
+        height: 300px;
+        background-image: url('./imagens-home/planetas.jpg');
+        background-position: 30% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 0.5s;
+    }
+    
+    .planets:hover {
+        transform: scale(1.05);
+    }
+    
+    .ships {
+        width: 150px;
+        height: 300px;
+        background-image: url('./imagens-home/starships.webp');
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 0.5s;
+    }
+    
+    .ships:hover {
+        transform: scale(1.05);
+    }
+}
+ @media(max-width: 506px) {
+
+    @import url(' https://fonts.cdnfonts.com/css/star-wars ');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: #f2ececf6;
+    font-size: none;
+}
+
+body {
+    background-image: url('./assets/universo-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-img {
+    width: 150px;
+    height: 70px;
+}
+
+.saga {
+    font-family: 'Star Wars', sans-serif;
+    color: rgba(255, 200, 0, 0.839);
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+#card-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-name {
+    display: flex;
+    justify-content: space-around;
+    
+    margin-top: 50px;
+    font-family: 'Star Wars', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+}
+
+.span-planets {
+    padding-right: 5px;
+}
+
+#card {
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.person {
+    width: 100px;
+    height: 200px;
+    background-image: url('./imagens-home/personagens.jpeg');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+
+.person:hover {
+    transform: scale(1.05);
+}
+
+.planets {
+    width: 100px;
+    height: 250px;
+    background-image: url('./imagens-home/planetas.jpg');
+    background-position: 60% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+
+.planets:hover {
+    transform: scale(1.05);
+}
+
+.ships {
+    width: 100px;
+    height: 300px;
+    background-image: url('./imagens-home/starships.webp');
+    background-position: 45% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+
+.ships:hover {
+    transform: scale(1.05);
+}
+
+.logo-img {
+    width: 150px;
+    height: 70px;
+}
+
+.social-media {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+i {
+    font-size: 1.2rem;
+}
+
+i:hover {
+    color: gold;
+}
+footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    row-gap: 10px;
+    margin: 60px 0 20px 0;
+}
+
+.footer-logo {
+    font-family: 'Star Wars', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.copyrigth {
+    font-weight: 500;
+}
+
+.character-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-position: 50% 10%;
+    background-size: cover;
+}
+
+.character-details {
+    font-family: 'Star Wars', sans-serif;
+    font-size: 12px;
+    font-weight: lighter;
+    color: rgba(255, 217, 0, 0.874);
+}
+ }
