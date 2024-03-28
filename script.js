@@ -50,7 +50,7 @@ async function loadCharacters(url) {
                 modalContent.innerHTML = ''
 
                 const characterImage = document.createElement("div")
-                characterImage.style.backgroundImage =`url('https://starwars-visualguide.com/assets/img/characters/${character.url.replace(/\D/g, "")}.jpg`
+                characterImage.style.backgroundImage =`url('https://starwars-visualguide.com/assets/img/characters/${character.url.replace(/\D/g, "")}.jpg')`
                 characterImage.className = "character-image"
 
                 const name = document.createElement("span")
@@ -115,6 +115,7 @@ async function loadCharacters(url) {
 
     } catch (error) {
         console.log(error)
+        alert('Error ao carregar a próxima página')
     }
  }
 
@@ -162,6 +163,7 @@ async function loadCharacters(url) {
     if (height === "unknown") {
         return "desconhecida"
     }
+    console.log(height)
     return (height / 100).toFixed(2);
  }
 
